@@ -1,2 +1,0 @@
-# comerZIA
-eShop for COMERZIA

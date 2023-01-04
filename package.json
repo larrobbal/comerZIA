@@ -1,0 +1,24 @@
+{
+  "name": "comerzia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tailwindcss": "npx tailwindcss -i ./src/input.css -o ./build/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrobbal/comerzia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larrobbal/comerzia/issues"
+  },
+  "homepage": "https://github.com/larrobbal/comerzia#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {},
+  "description": ""
+}
