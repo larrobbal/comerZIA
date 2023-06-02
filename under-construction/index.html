@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Construcción | ComerZIA</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <style>
+    @media (max-width: 767.98px)
+    {
+        h1
+        {
+            font-size: 36px !important;
+        }
+        .logo-comerzia
+        {
+            width: 75%;
+        }
+        .main-div
+        {
+            background-color: rgba(255,255,255,0.9);
+            width: 75%;
+            height: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+            -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+            -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+        }
+        .email
+        {
+            padding: 12px 20px;
+            box-sizing: border-box;
+            margin: 0 20px;
+            width: 24rem;
+            font-size: 18px;
+        }
+        .send-mail
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .logos-div
+        {
+            display: none;
+        }
+        .logos-div-movil
+        {
+            display:flex !important;
+        }
+        .logos-div-movil > tbody > tr > td > a > img
+        {
+            width: 10rem;
+            height: auto;
+        }
+        .logos-div-movil > tbody > tr > td
+        {
+            padding: .5rem;
+        }
+    }
+    body
+    {
+        background-color: #005e85;
+        margin: 0;
+        min-height:100%;
+        background:linear-gradient(0deg, rgba(0, 94, 133, 0.5), rgba(0, 94, 133, 0.5)), url(img/wpp-main.webp);
+        background-size:cover;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1
+    {
+        font-size: 60px;
+        margin: 0.1rem 0;
+    }
+    .main-div
+    {
+        background-color: rgba(255,255,255,0.9);
+        width: 75%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+        -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+        -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+    }
+    .send-mail
+    {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .email
+    {
+        padding: 12px 20px;
+        box-sizing: border-box;
+        margin: 20px 0;
+        width: 20rem;
+        font-size: 18px;
+    }
+    .sendButton
+    {
+        background-color: #005e85;
+        border: none;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: .5rem 2rem;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .sendButton:hover
+    {
+        cursor: pointer;
+        box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+        -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+        -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.49);
+        transition: 0.3s;
+    }
+    .sendButton:focus
+    {
+        box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.49) inset;
+        -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.49) inset;
+        -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.49) inset;
+        
+    }
+    .logos-div > tbody > tr > td
+    {
+        padding: 0.5rem;
+    }
+    .logos-div > tbody > tr > td > a > img
+    {
+        width: 10rem;
+        height: auto;
+    }
+    .logos-div-movil
+    {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <div class="main-div">
+            <div>
+                <img class="logo-comerzia" src="img/logo-positivo.svg" alt="ComerZIA">
+                <h1>¡Estamos en construcción!</h1>
+                <h2>Pronto estaremos listos para ofrecerte el mejor servicio</h2>
+                <div style="margin: 15px 0">
+                    <span style="font-size: 20px;">Introduce tu email para ser notificado cuando lancemos el sitio</span>
+                    <div  class="send-mail">
+                        <input type="text" name="mail" id="email" class="email" placeholder="example@mail.com">
+                        <button class="sendButton" id="sendMessageButton" type="submit">Enviar</button>
+                    </div>
+                    <div id="success"></div>
+                </div>
+                <h2>Te invitamos a visitar nuestras otras páginas y conocer nuestro catálogo:</h2>
+                <table class="logos-div">
+                    <tr>
+                        <td><span style="display: none;">bancas para jardin, bancas de madera para jardin, bancas de madera, bancas de jardin, bancas, bancas urbanas, bancas modernas, bancas metalicas</span><a href="https://bancas-para-jardin.com.mx/"><img src="img/logos/bancas-jardin.svg" alt="bancas para jardin, bancas de madera para jardin, bancas de madera, bancas de jardin, bancas, bancas urbanas, bancas modernas, bancas metalicas"></a></td>
+                        <td><span style="display: none;">bancas para jardin, bancas de madera para jardin, bancas de madera, bancas de jardin, bancas, bancas urbanas, bancas modernas, bancas metalicas</span><a href="https://bancasmetalicas.com.mx/"><img src="img/logos/bancas-metalicas.svg" alt="bancas para jardin, bancas de madera para jardin, bancas de madera, bancas de jardin, bancas, bancas urbanas, bancas modernas, bancas metalicas"></a></td>
+                        <td><span style="display: none;">bolardos, bolardos de concreto, bolardos de acero. bolardos metálicos, bolardos de plástico, bolardos con luz, bolardos flexibles, bolardos retractiles</span><a href="https://bolardo.com.mx/"><img src="img/logos/bolardo.svg" alt="bolardos, bolardos de concreto, bolardos de acero. bolardos metálicos, bolardos de plástico, bolardos con luz, bolardos flexibles, bolardos retractiles"></a></td>
+                        <td><span style="display: none;">botes de basura de acero inoxidable, botes de acero inoxidable para basura, botes para basura en acero inoxidable</span><a href="https://botedebasuradeaceroinoxidable.com.mx/"><img src="img/logos/botes-aix.svg" alt="botes de basura de acero inoxidable, botes de acero inoxidable para basura, botes para basura en acero inoxidable"></a></td>
+                        <td><span style="display: none;">botes de basura para gasolineras, botes para gasolinerias, contenedores para gasolinera</span><a href="https://botesdebasuraparagasolineras.com.mx/"><img src="img/logos/botes-gasolineras.svg" alt="botes de basura para gasolineras, botes para gasolinerias, contenedores para gasolinera"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">botes con pedal, botes de basura con tapa y pedal, botes de basura con pedal</span><a href="https://botesdebasuraconpedal.com.mx/"><img src="img/logos/botes-pedal.svg" alt="botes con pedal, botes de basura con tapa y pedal, botes de basura con pedal"></a></td>
+                        <td><span style="display: none;">botes para desechos de perro, botes para popo de perro, botes para heces caninas, contenedores para desechos de perro, contenedores para popo de perro, contenedores para heces caninas</span><a href="https://botesparadesechosdeperro.com.mx/"><img src="img/logos/botes-perros.svg" alt="botes para desechos de perro, botes para popo de perro, botes para heces caninas, contenedores para desechos de perro, contenedores para popo de perro, contenedores para heces caninas"></a></td>
+                        <td><span style="display: none;">botes para pilas, contenedores para pilas, reciclaje de pilas, pilas usadas, pilas alcalinas, botes, contenedores, pilas, reciclaje</span><a href="https://botesparapilas.com.mx/"><img src="img/logos/botes-pilas.svg" alt="botes para pilas, contenedores para pilas, reciclaje de pilas, pilas usadas, pilas alcalinas, botes, contenedores, pilas, reciclaje"></a></td>
+                        <td><span style="display: none;">botes de reciclaje, botes de basura de reciclaje, botes para reciclaje, botes de reciclaje en colores, botes de basura ecologicos</span><a href="https://botesdereciclaje.com.mx/"><img src="img/logos/botes-reciclaje.svg" alt="botes de reciclaje, botes de basura de reciclaje, botes para reciclaje, botes de reciclaje en colores, botes de basura ecologicos"></a></td>
+                        <td><span style="display: none;">carros barrenderos, carros de limpieza, carros para basura, carros para basureros, carros de limpieza municipal</span><a href="https://carrosbarrenderos.com.mx/"><img src="img/logos/carros-barrenderos.svg" alt="carros barrenderos, carros de limpieza, carros para basura, carros para basureros, carros de limpieza municipal"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">casas para perros, casas para perros grandes, casas para perros economicas, casas para perro pequeñas</span><a href="https://casasparaperros.com.mx/"><img src="img/logos/casas-perros.svg" alt="casas para perros, casas para perros grandes, casas para perros economicas, casas para perro pequeñas"></a></td>
+                        <td><span style="display: none;">ceniceros metálicos, ceniceros de acero inoxidable, ceniceros de pie, ceniceros para exterior, ceniceros de metal</span><a href="https://cenicerosmetalicos.com.mx/"><img src="img/logos/ceniceros.svg" alt="ceniceros metálicos, ceniceros de acero inoxidable, ceniceros de pie, ceniceros para exterior, ceniceros de metal"></a></td>
+                        <td><span style="display: none;">cestos de basura, cestos para basura, cestos para basura metálicos, cestos de basura para oficina, cestos de basura ecológicos, cestos de basura modernos</span><a href="https://cestosdebasura.com.mx/"><img src="img/logos/cestos.svg" alt="cestos de basura, cestos para basura, cestos para basura metálicos, cestos de basura para oficina, cestos de basura ecológicos, cestos de basura modernos"></a></td>
+                        <td><span style="display: none;">conos de seguridad, conos viales, cono de transito, conos de seguridad industrial, cono de seguridad vial</span><a href="https://conosdeseguridad.com.mx/"><img src="img/logos/conos.svg" alt="conos de seguridad, conos viales, cono de transito, conos de seguridad industrial, cono de seguridad vial"></a></td>
+                        <td><span style="display: none;">contenedores de basura grandes, contenedores grandes de plastico, contenedores grandes para basura</span><a href="https://contenedoresdebasuragrandes.com.mx/"><img src="img/logos/contenedores-grandes.svg" alt="contenedores de basura grandes, contenedores grandes de plastico, contenedores grandes para basura"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">estaciones para reciclaje, botes de reciclaje, botes de basura de reciclaje, estaciones de reciclaje</span><a href="https://estacionesparareciclaje.com/"><img src="img/logos/estaciones-reciclaje.svg" alt="estaciones para reciclaje, botes de reciclaje, botes de basura de reciclaje, estaciones de reciclaje"></a></td>
+                        <td><span style="display: none;">macetas de acero inoxidable, macetas metalica, macetas de acero, jardineras de acero</span><a href="https://macetasdeaceroinoxidable.com.mx/"><img src="img/logos/macetas-aix.svg" alt="macetas de acero inoxidable, macetas metalica, macetas de acero, jardineras de acero"></a></td>
+                        <td><span style="display: none;">porta extintores, porta extintores de piso, porta extintor tipo cenicero, porta extintor, porta extintores de acero inoxidable, ceniceros porta extintores, porta extintor metalico</span><a href="https://portaextintor.com.mx/"><img src="img/logos/portaextintor.svg" alt="porta extintores, porta extintores de piso, porta extintor tipo cenicero, porta extintor, porta extintores de acero inoxidable, ceniceros porta extintores, porta extintor metalico"></a></td>
+                        <td><span style="display: none;">tarimas antiderrame, tarimas de plástico antiderrame, tarimas antiderrame para tambos</span><a href="https://tarimas-antiderrames.com.mx/"><img src="img/logos/tarimas.svg" alt="tarimas antiderrame, tarimas de plástico antiderrame, tarimas antiderrame para tambos"></a></td>
+                    </tr>
+                </table>
+                <table class="logos-div-movil">
+                    <tr>
+                        <td><span style="display: none;">bancas para jardin, bancas de madera para jardin, bancas de madera, bancas de jardin, bancas, bancas urbanas, bancas modernas, bancas metalicas</span><a href="https://bancas-para-jardin.com.mx/"><img src="img/logos/bancas-jardin.svg" alt="bancas para jardin, bancas de madera para jardin, bancas de madera, bancas de jardin, bancas, bancas urbanas, bancas modernas, bancas metalicas"></a></td>
+                        <td><span style="display: none;">bancas para jardin, bancas de madera para jardin, bancas de madera, bancas de jardin, bancas, bancas urbanas, bancas modernas, bancas metalicas</span><a href="https://bancasmetalicas.com.mx/"><img src="img/logos/bancas-metalicas.svg" alt="bancas para jardin, bancas de madera para jardin, bancas de madera, bancas de jardin, bancas, bancas urbanas, bancas modernas, bancas metalicas"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">bolardos, bolardos de concreto, bolardos de acero. bolardos metálicos, bolardos de plástico, bolardos con luz, bolardos flexibles, bolardos retractiles</span><a href="https://bolardo.com.mx/"><img src="img/logos/bolardo.svg" alt="bolardos, bolardos de concreto, bolardos de acero. bolardos metálicos, bolardos de plástico, bolardos con luz, bolardos flexibles, bolardos retractiles"></a></td>
+                        <td><span style="display: none;">botes de basura de acero inoxidable, botes de acero inoxidable para basura, botes para basura en acero inoxidable</span><a href="https://botedebasuradeaceroinoxidable.com.mx/"><img src="img/logos/botes-aix.svg" alt="botes de basura de acero inoxidable, botes de acero inoxidable para basura, botes para basura en acero inoxidable"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">botes de basura para gasolineras, botes para gasolinerias, contenedores para gasolinera</span><a href="https://botesdebasuraparagasolineras.com.mx/"><img src="img/logos/botes-gasolineras.svg" alt="botes de basura para gasolineras, botes para gasolinerias, contenedores para gasolinera"></a></td>
+                        <td><span style="display: none;">botes con pedal, botes de basura con tapa y pedal, botes de basura con pedal</span><a href="https://botesdebasuraconpedal.com.mx/"><img src="img/logos/botes-pedal.svg" alt="botes con pedal, botes de basura con tapa y pedal, botes de basura con pedal"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">botes para desechos de perro, botes para popo de perro, botes para heces caninas, contenedores para desechos de perro, contenedores para popo de perro, contenedores para heces caninas</span><a href="https://botesparadesechosdeperro.com.mx/"><img src="img/logos/botes-perros.svg" alt="botes para desechos de perro, botes para popo de perro, botes para heces caninas, contenedores para desechos de perro, contenedores para popo de perro, contenedores para heces caninas"></a></td>
+                        <td><span style="display: none;">botes para pilas, contenedores para pilas, reciclaje de pilas, pilas usadas, pilas alcalinas, botes, contenedores, pilas, reciclaje</span><a href="https://botesparapilas.com.mx/"><img src="img/logos/botes-pilas.svg" alt="botes para pilas, contenedores para pilas, reciclaje de pilas, pilas usadas, pilas alcalinas, botes, contenedores, pilas, reciclaje"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">botes de reciclaje, botes de basura de reciclaje, botes para reciclaje, botes de reciclaje en colores, botes de basura ecologicos</span><a href="https://botesdereciclaje.com.mx/"><img src="img/logos/botes-reciclaje.svg" alt="botes de reciclaje, botes de basura de reciclaje, botes para reciclaje, botes de reciclaje en colores, botes de basura ecologicos"></a></td>
+                        <td><span style="display: none;">carros barrenderos, carros de limpieza, carros para basura, carros para basureros, carros de limpieza municipal</span><a href="https://carrosbarrenderos.com.mx/"><img src="img/logos/carros-barrenderos.svg" alt="carros barrenderos, carros de limpieza, carros para basura, carros para basureros, carros de limpieza municipal"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">casas para perros, casas para perros grandes, casas para perros economicas, casas para perro pequeñas</span><a href="https://casasparaperros.com.mx/"><img src="img/logos/casas-perros.svg" alt="casas para perros, casas para perros grandes, casas para perros economicas, casas para perro pequeñas"></a></td>
+                        <td><span style="display: none;">ceniceros metálicos, ceniceros de acero inoxidable, ceniceros de pie, ceniceros para exterior, ceniceros de metal</span><a href="https://cenicerosmetalicos.com.mx/"><img src="img/logos/ceniceros.svg" alt="ceniceros metálicos, ceniceros de acero inoxidable, ceniceros de pie, ceniceros para exterior, ceniceros de metal"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">cestos de basura, cestos para basura, cestos para basura metálicos, cestos de basura para oficina, cestos de basura ecológicos, cestos de basura modernos</span><a href="https://cestosdebasura.com.mx/"><img src="img/logos/cestos.svg" alt="cestos de basura, cestos para basura, cestos para basura metálicos, cestos de basura para oficina, cestos de basura ecológicos, cestos de basura modernos"></a></td>
+                        <td><span style="display: none;">conos de seguridad, conos viales, cono de transito, conos de seguridad industrial, cono de seguridad vial</span><a href="https://conosdeseguridad.com.mx/"><img src="img/logos/conos.svg" alt="conos de seguridad, conos viales, cono de transito, conos de seguridad industrial, cono de seguridad vial"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">contenedores de basura grandes, contenedores grandes de plastico, contenedores grandes para basura</span><a href="https://contenedoresdebasuragrandes.com.mx/"><img src="img/logos/contenedores-grandes.svg" alt="contenedores de basura grandes, contenedores grandes de plastico, contenedores grandes para basura"></a></td>
+                        <td><span style="display: none;">estaciones para reciclaje, botes de reciclaje, botes de basura de reciclaje, estaciones de reciclaje</span><a href="https://estacionesparareciclaje.com/"><img src="img/logos/estaciones-reciclaje.svg" alt="estaciones para reciclaje, botes de reciclaje, botes de basura de reciclaje, estaciones de reciclaje"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">macetas de acero inoxidable, macetas metalica, macetas de acero, jardineras de acero</span><a href="https://macetasdeaceroinoxidable.com.mx/"><img src="img/logos/macetas-aix.svg" alt="macetas de acero inoxidable, macetas metalica, macetas de acero, jardineras de acero"></a></td>
+                        <td><span style="display: none;">porta extintores, porta extintores de piso, porta extintor tipo cenicero, porta extintor, porta extintores de acero inoxidable, ceniceros porta extintores, porta extintor metalico</span><a href="https://portaextintor.com.mx/"><img src="img/logos/portaextintor.svg" alt="porta extintores, porta extintores de piso, porta extintor tipo cenicero, porta extintor, porta extintores de acero inoxidable, ceniceros porta extintores, porta extintor metalico"></a></td>
+                    </tr>
+                    <tr>
+                        <td><span style="display: none;">tarimas antiderrame, tarimas de plástico antiderrame, tarimas antiderrame para tambos</span><a href="https://tarimas-antiderrames.com.mx/"><img src="img/logos/tarimas.svg" alt="tarimas antiderrame, tarimas de plástico antiderrame, tarimas antiderrame para tambos"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="assets/mail/contact_me.js"></script>
+</body>
+</html>
