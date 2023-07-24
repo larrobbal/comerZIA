@@ -1,7 +1,10 @@
 (() => {
     const navBar = document.querySelector("#main__navbar");
     const botonMobileNavbar = document.querySelector("#botton__mobile__menu");
+    const desktopOptions = document.querySelector("#desktop__options");
+    const options = desktopOptions.querySelectorAll(":scope > li > a");
     let buttons = document.querySelectorAll("a");
+    //Smooth scroll animation with click event
     buttons.forEach((button) => {
         button.addEventListener("click", (e) => {
         e.preventDefault();
@@ -11,17 +14,25 @@
         });
         });
     });
+    //Navbar animation color with scroll event
     document.addEventListener("scroll", (e) => {
         if (window.scrollY > 100) {
         navBar.classList.add("bg-whiteapple");
         botonMobileNavbar.classList.remove("text-whiteapple");
         botonMobileNavbar.classList.add("text-blackapple");
+        options.forEach(op => {
+            op.classList.replace('text-whiteapple','text-blackapple');
+        });
         } else {
         navBar.classList.remove("bg-whiteapple");
         botonMobileNavbar.classList.add("text-whiteapple");
         botonMobileNavbar.classList.remove("text-blackapple");
+        options.forEach(op => {
+            op.classList.replace('text-blackapple','text-whiteapple');
+        });
         }
     });
+    //Change button color of mobile menu with click event
     botonMobileNavbar.addEventListener('click', (e)=>{
         if(botonMobileNavbar.getAttribute('aria-expanded')=="true")
             botonMobileNavbar.classList.replace('text-whiteapple','text-blackapple');

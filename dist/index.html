@@ -24,7 +24,7 @@
     </div>
     <nav
       id="main__navbar"
-      class="fixed flex w-full top-0 z-10 flex-nowrap items-center justify-between py-2 text-blackapple transition ease-in-out duration-500"
+      class="fixed flex w-full top-0 z-10 flex-nowrap items-center justify-between py-2 md:py-4 text-blackapple transition ease-in-out duration-500"
     >
       <!--mobile button for toggle mobile menu-->
       <div
@@ -65,31 +65,65 @@
           alt="ComerZIA"
         />
       </div>
-      <div id="desktop__navbar" class="md:w-full hidden md:flex">
-        <ul class="flex">
-          <li><a href="#about__us">¿Quiénes somos?</a></li>
-          <li><a href="#clients">Nuestros clientes</a></li>
-          <li><a href="#network">ComerZIA Network</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
+      <div id="desktop__navbar" class="md:w-full hidden md:flex px-12">
+        <ul id="desktop__options" class="flex w-full justify-end">
+          <li class="mx-6">
+            <a
+              class="font-bold text-whiteapple hover:text-colormain hover:scale-110 transition ease-in-out"
+              href="#about__us"
+              >¿Quiénes somos?</a
+            >
+          </li>
+          <li class="mx-6">
+            <a
+              class="font-bold text-whiteapple hover:text-colormain hover:scale-110 transition ease-in-out"
+              href="#clients"
+              >Nuestros clientes</a
+            >
+          </li>
+          <li class="mx-6">
+            <a
+              class="font-bold text-whiteapple hover:text-colormain hover:scale-110 transition ease-in-out"
+              href="#network"
+              >ComerZIA Network</a
+            >
+          </li>
+          <li class="mx-6">
+            <a
+              class="font-bold text-whiteapple hover:text-colormain hover:scale-110 transition ease-in-out"
+              href="#projects"
+              >Proyectos</a
+            >
+          </li>
+          <li class="mx-6">
+            <a
+              class="font-bold text-whiteapple hover:text-colormain hover:scale-110 transition ease-in-out"
+              href="#contact"
+              >Contacto</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
     <section
-      class="relative -z-20 overflow-hidden bg-cover bg-no-repeat h-screen text-whiteapple"
+      class="relative md:z-0 -z-20 overflow-hidden bg-cover bg-no-repeat h-screen text-whiteapple"
       style="background-image: url('assets/img/portfolio/background-img.webp')"
       id="home__page"
     >
-      <div class="bg-colormain bg-opacity-30 w-full h-full top-0 left-0 p-10 -z-10">
-        <div class="flex h-full items-center justify-center">
+      <div
+        class="flex bg-colormain bg-opacity-30 w-full h-full top-0 left-0 p-10 md:p-0 -z-10"
+      >
+        <div
+          class="flex align-middle h-full items-center justify-center md:p-16 md:bg-colormain md:w-2/5"
+        >
           <div class="grid gap-5">
             <span
-              ><h1 class="font-oswald font-extrabold text-3xl">
+              ><h1 class="font-oswald font-extrabold text-3xl md:text-4xl">
                 Soluciones para crear espacios ideales
               </h1></span
             >
             <span
-              ><h2 class="font-normal text-lg">
+              ><h2 class="font-normal text-lg md:text-2xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 sit amet ultricies libero.
               </h2></span
@@ -97,294 +131,336 @@
             <a
               href="#about__us"
               class="text-lg font-bold w-fit h-full text-center"
-              ><div class="py-2 w-40 bg-coloralt rounded-md hover:scale-105 focus:scale-105 transition ease-in-out">Conoce más</div></a
+              ><div
+                class="py-2 w-40 bg-coloralt rounded-md hover:scale-105 focus:scale-105 transition ease-in-out"
+              >
+                Conoce más
+              </div></a
             >
           </div>
         </div>
+        <div class="hidden md:flex md:w-3/5"></div>
       </div>
     </section>
     <section id="about__us" class="px-5 py-10">
-      <div class="flex justify-center mb-5">
-        <h2
-          class="font-oswald text-2xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
-        >
-          ¿Quiénes somos?
-        </h2>
-      </div>
-      <figure
-        class="h-64 overflow-hidden mb-5"
-        style="
-          background-image: url(assets/img/portfolio/teamwork-unsplash-media.webp);
-          background-position: center;
-          background-size: cover;
-        "
-      ></figure>
-      <span
-        >Somos una empresa mexicana con más de 10 años de experiencia en brindar
-        soluciones de valor enfocándonos en las necesidades de nuestros
-        clientes; comprometidos en ofrecer una excelente atención y calidad en
-        el servicio y productos.</span
-      >
-      <!--Carousel info about us-->
-      <div
-        id="carouselExampleIndicators"
-        class="relative h-[35rem] mt-5"
-        data-te-carousel-init
-        data-te-carousel-slide
-      >
-        <!--Carousel indicators-->
-        <div
-          class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] flex list-none justify-center p-0"
-          data-te-carousel-indicators
-        >
-          <button
-            type="button"
-            data-te-target="#carouselExampleIndicators"
-            data-te-slide-to="0"
-            data-te-carousel-active
-            class="mx-2 box-content h-3 w-3 flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-colormain bg-clip-padding p-0 -indent-[999px] opacity-25 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-te-target="#carouselExampleIndicators"
-            data-te-slide-to="1"
-            class="mx-2 box-content h-3 w-3 flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-colormain bg-clip-padding p-0 -indent-[999px] opacity-25 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-te-target="#carouselExampleIndicators"
-            data-te-slide-to="2"
-            class="mx-2 box-content h-3 w-3 flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-colormain bg-clip-padding p-0 -indent-[999px] opacity-25 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <!--Carousel items-->
-        <div
-          class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
-        >
-          <!--First item-->
-          <div
-            class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-te-carousel-item
-            data-te-carousel-active
-          >
-            <div class="flex justify-center mb-5">
-              <h3
-                class="font-oswald text-2xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
-              >
-                Misión
-              </h3>
-            </div>
-            <img
-              src="assets/img/portfolio/mision-unsplash-media.webp"
-              class="block w-full px-3"
-              alt="Wild Landscape"
-            />
-            <div class="px-6 my-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              molestie fermentum interdum. Duis iaculis nisl vitae lacus
-              accumsan, eget fringilla lectus finibus. Ut eget libero ut augue
-              lobortis condimentum. Proin nec velit turpis. Mauris eu est nec
-              elit accumsan tincidunt.
-            </div>
-          </div>
-          <!--Second item-->
-          <div
-            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-te-carousel-item
-          >
-            <div class="flex justify-center mb-5">
-              <h3
-                class="font-oswald text-2xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
-              >
-                Visión
-              </h3>
-            </div>
-            <img
-              src="assets/img/portfolio/vision-unsplash-media.webp"
-              class="block w-full px-3"
-              alt="Camera"
-            />
-            <div class="px-6 my-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              molestie fermentum interdum. Duis iaculis nisl vitae lacus
-              accumsan, eget fringilla lectus finibus. Ut eget libero ut augue
-              lobortis condimentum. Proin nec velit turpis. Mauris eu est nec
-              elit accumsan tincidunt.
-            </div>
-          </div>
-          <!--Third item-->
-          <div
-            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-te-carousel-item
-          >
-            <div class="flex justify-center mb-5">
-              <h3
-                class="font-oswald text-2xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
-              >
-                Valores
-              </h3>
-            </div>
-            <img
-              src="assets/img/portfolio/values-unsplash-media.webp"
-              class="block w-full px-3"
-              alt="Exotic Fruits"
-            />
-            <div class="px-6 my-3">
-              <span class="text-xl font-bold"
-                >Comprometidos con nuestros colaboradores</span
-              >
-              <ul class="list-disc">
-                <li>Compromiso</li>
-                <li>Excelencia en servicio al cliente</li>
-                <li>Calidad</li>
-                <li>Innovación</li>
-                <li>Satisfacción total</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!--Carousel controls - prev item-->
-        <button
-          class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-          type="button"
-          data-te-target="#carouselExampleIndicators"
-          data-te-slide="prev"
-        >
-          <span class="inline-block h-8 w-8">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6"
+      <div class="md:flex">
+        <div class="md:w-1/2 md:px-5">
+          <div class="flex justify-center mb-5">
+            <h2
+              class="font-oswald text-2xl md:text-3xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
-              />
-            </svg>
-          </span>
+              ¿Quiénes somos?
+            </h2>
+          </div>
+          <figure
+            class="h-64 overflow-hidden mb-5"
+            style="
+              background-image: url(assets/img/portfolio/teamwork-unsplash-media.webp);
+              background-position: center;
+              background-size: cover;
+            "
+          ></figure>
           <span
-            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-            >Previous</span
+            >Somos una empresa mexicana con más de 10 años de experiencia en
+            brindar soluciones de valor enfocándonos en las necesidades de
+            nuestros clientes; comprometidos en ofrecer una excelente atención y
+            calidad en el servicio y productos.</span
           >
-        </button>
-        <!--Carousel controls - next item-->
-        <button
-          class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-          type="button"
-          data-te-target="#carouselExampleIndicators"
-          data-te-slide="next"
+        </div>
+        <!--Carousel info about us-->
+        <div
+          id="carouselExampleIndicators"
+          class="relative h-[38rem] mt-5 md:mt-0 md:w-1/2 px-5"
+          data-te-carousel-init
+          data-te-carousel-slide
         >
-          <span class="inline-block h-8 w-8">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </span>
-          <span
-            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-            >Next</span
+          <!--Carousel indicators-->
+          <div
+            class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] flex list-none justify-center p-0"
+            data-te-carousel-indicators
           >
-        </button>
+            <button
+              type="button"
+              data-te-target="#carouselExampleIndicators"
+              data-te-slide-to="0"
+              data-te-carousel-active
+              class="mx-2 box-content h-3 w-3 flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-colormain bg-clip-padding p-0 -indent-[999px] opacity-25 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-te-target="#carouselExampleIndicators"
+              data-te-slide-to="1"
+              class="mx-2 box-content h-3 w-3 flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-colormain bg-clip-padding p-0 -indent-[999px] opacity-25 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-te-target="#carouselExampleIndicators"
+              data-te-slide-to="2"
+              class="mx-2 box-content h-3 w-3 flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-colormain bg-clip-padding p-0 -indent-[999px] opacity-25 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <!--Carousel items-->
+          <div
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+          >
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+              data-te-carousel-active
+            >
+              <div class="flex justify-center mb-5">
+                <h3
+                  class="font-oswald text-2xl md:text-3xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
+                >
+                  Misión
+                </h3>
+              </div>
+              <div class="md:w-full md:flex md:justify-center">
+                <img
+                  src="assets/img/portfolio/mision-unsplash-media.webp"
+                  class="block w-full md:w-3/4 px-3"
+                  alt="Wild Landscape"
+                />
+              </div>
+              <div class="px-6 my-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                molestie fermentum interdum. Duis iaculis nisl vitae lacus
+                accumsan, eget fringilla lectus finibus. Ut eget libero ut augue
+                lobortis condimentum. Proin nec velit turpis. Mauris eu est nec
+                elit accumsan tincidunt.
+              </div>
+            </div>
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
+              <div class="flex justify-center mb-5">
+                <h3
+                  class="font-oswald text-2xl md:text-3xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
+                >
+                  Visión
+                </h3>
+              </div>
+              <div class="md:w-full md:flex md:justify-center">
+                <img
+                src="assets/img/portfolio/vision-unsplash-media.webp"
+                class="block w-full md:w-3/4 px-3"
+                alt="Camera"
+                />
+              </div>              
+              <div class="px-6 my-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                molestie fermentum interdum. Duis iaculis nisl vitae lacus
+                accumsan, eget fringilla lectus finibus. Ut eget libero ut augue
+                lobortis condimentum. Proin nec velit turpis. Mauris eu est nec
+                elit accumsan tincidunt.
+              </div>
+            </div>
+            <!--Third item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
+              <div class="flex justify-center mb-5">
+                <h3
+                  class="font-oswald text-2xl md:text-3xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
+                >
+                  Valores
+                </h3>
+              </div>
+              <div class="md:w-full md:flex md:justify-center">
+                <img
+                src="assets/img/portfolio/values-unsplash-media.webp"
+                class="block w-full md:w-3/4 px-3"
+                alt="Exotic Fruits"
+                />
+              </div>              
+              <div class="px-6 my-3">
+                <span class="text-xl font-bold"
+                  >Comprometidos con nuestros colaboradores</span
+                >
+                <ul class="list-disc">
+                  <li>Compromiso</li>
+                  <li>Excelencia en servicio al cliente</li>
+                  <li>Calidad</li>
+                  <li>Innovación</li>
+                  <li>Satisfacción total</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Carousel controls - prev item-->
+          <button
+            class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleIndicators"
+            data-te-slide="prev"
+          >
+            <span class="inline-block h-8 w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Previous</span
+            >
+          </button>
+          <!--Carousel controls - next item-->
+          <button
+            class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleIndicators"
+            data-te-slide="next"
+          >
+            <span class="inline-block h-8 w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Next</span
+            >
+          </button>
+        </div>
       </div>
     </section>
     <section class="bg-gray-200 py-10 px-5" id="clients">
       <div class="flex justify-center mb-5">
         <h2
-          class="font-oswald text-2xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
+          class="font-oswald text-2xl md:text-3xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
         >
           Nuestros clientes
         </h2>
       </div>
-      <div class="grid grid-cols-1 justify-items-center">
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-5 justify-items-center">
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/funo-media.webp"
             alt=""
-          />
+            data-media-client="funo"
+            />
+          </a>
         </div>
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/grupo-mexico-media.webp"
             alt=""
-          />
+            data-media-client="grupo-mexico"
+            />
+          </a>
         </div>
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/parks-media.webp"
             alt=""
-          />
+            data-media-client="parks"
+            />
+          </a>
         </div>
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/gicsa-media.webp"
             alt=""
-          />
+            data-media-client="gicsa"
+            />
+          </a>
         </div>
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/hilton-media.webp"
             alt=""
-          />
+            data-media-client="hilton"
+            />
+          </a>
         </div>
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/altozano-media.webp"
             alt=""
+            data-media-client="altozano"
           />
+          </a>
         </div>
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/antea-media.webp"
             alt=""
-          />
+            data-media-client="antea"
+            />
+          </a>
         </div>
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/csi-group-media.webp"
             alt=""
-          />
+            data-media-client="csi-group"
+            />
+          </a>
         </div>
         <div class="w-3/4 max-h-28 py-4 flex justify-center">
-          <img
-            class="max-h-28"
+          <a href="#">
+            <img
+            class="max-h-28 md:h-full md:w-auto md:hover:scale-105 transition ease-in-out"
             src="assets/img/portfolio/logos/tupperware-media.webp"
             alt=""
-          />
+            data-media-client="tupperware"
+            />
+          </a>
         </div>
       </div>
     </section>
     <section id="network" class="py-10 px-5">
       <div class="flex justify-center mb-5">
         <h2
-          class="font-oswald text-2xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
+          class="font-oswald text-2xl md:text-3xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
         >
-          Nuestros clientes
+          ComerZIA Network
         </h2>
       </div>
       <span
@@ -397,7 +473,7 @@
     <section id="projects" class="py-10 px-5 bg-gray-200">
       <div class="flex justify-center mb-5">
         <h2
-          class="font-oswald text-2xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
+          class="font-oswald text-2xl md:text-3xl font-bold border-b-coloralt border-b-4 pb-2 w-fit"
         >
           Proyectos
         </h2>
@@ -659,7 +735,7 @@
     <section id="contact" class="py-10 px-5 bg-colormain text-whiteapple">
       <div class="flex justify-center mb-5">
         <h2
-          class="font-oswald text-2xl font-bold border-b-whiteapple border-b-4 pb-2 w-fit"
+          class="font-oswald text-2xl md:text-3xl font-bold border-b-whiteapple border-b-4 pb-2 w-fit"
         >
           Contacto
         </h2>
