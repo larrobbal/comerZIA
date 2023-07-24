@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "rebuild-tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch"
+  },
+  "dependencies": {
+    "tw-elements": "^1.0.0-beta2"
+  }
+}
