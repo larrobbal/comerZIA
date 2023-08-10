@@ -32,6 +32,9 @@ module.exports = {
       })
     })
   ],
+  safelist:[
+    'animate-[fade-in-up_1s_ease-in-out]'
+  ],
   darkMode: "class"
 }
 

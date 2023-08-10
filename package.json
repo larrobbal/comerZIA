@@ -6,6 +6,7 @@
     "rebuild-tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch"
   },
   "dependencies": {
+    "json-server": "^0.17.3",
     "tw-elements": "^1.0.0-beta2"
   }
 }
